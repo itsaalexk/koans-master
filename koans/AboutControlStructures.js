@@ -38,10 +38,10 @@ describe("About Control Structures", () => {
 
   it("ternary operator", function() {
     var fruit = true ? "apple" : "orange";
-    expect(FILL_ME_IN).withContext('what is the value of fruit?').toEqual(fruit);
+    expect("apple").withContext('what is the value of fruit?').toEqual(fruit);
 
     fruit = false ? "apple" : "orange";
-    expect(FILL_ME_IN).withContext('now what is the value of fruit?').toEqual(fruit);
+    expect("orange").withContext('now what is the value of fruit?').toEqual(fruit);
   });
 
   it("switch", function() {
@@ -54,7 +54,7 @@ describe("About Control Structures", () => {
             result = 2;
             break;
     }
-    expect(FILL_ME_IN).withContext('what is the value of result?').toEqual(result);
+    expect(2).withContext('what is the value of result?').toEqual(result);
   });
 
   it("switch default case", function() {
@@ -70,12 +70,12 @@ describe("About Control Structures", () => {
             result = "Merry";
             break;
     }
-    expect(FILL_ME_IN).withContext('what is the value of result?').toEqual(result);
+    expect("Merry").withContext('what is the value of result?').toEqual(result);
   });
 
   it("null coalescing", function() {
     var result = null || "a value";
-    expect(FILL_ME_IN).withContext('what is the value of result?').toEqual(result);
+    expect("a value").withContext('what is the value of result?').toEqual(result);
   });
 
 });
